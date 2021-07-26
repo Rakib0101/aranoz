@@ -15,7 +15,7 @@
     transition: .7s;
     z-index: 500;
     position: absolute;
-    top: 320px;
+    top: 300px;
 }
 .single-feature-post:hover .btn{
     visibility: visible;
