@@ -68,3 +68,13 @@
 .widget-list ul li a{
     text-decoration: none;
 }
+
+.widget-title h2{
+    font-size: 20px;
+}
+.widget-list a{
+    color: #ddd;
+}
+.widget-list a:hover{
+    color: #DC3545;
+}
