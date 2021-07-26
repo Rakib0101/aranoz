@@ -10,67 +10,45 @@
         <!-- font-awesome link -->
         <link rel="stylesheet" href="css/font-awesome/css/all.min.css">
         <!-- bootstrap css link -->
-        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
         <!-- main style sheet link -->
         <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
     <header style="background-color: #ECFDFF;">
-        <div class="container d-flex justify-content-between flex-wrap">
-            <nav class="navbar navbar-expand-lg navbar-light w-75">
-                <div class="container-fluid d-flex flex-sm-row flex-row-reverse align-items-start justify-content-between">
-                  <div class="logo">
-                    <a class="navbar-brand" href="#"><img src="img/logo.webp" alt=""></a>
-                  </div>
-                  <div class="main-menu">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarNavDropdown">
-                      <ul class="navbar-nav">
-                        <li class="nav-item">
-                          <a class="nav-link active" aria-current="page" href="#">Home</a>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Shop
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                              <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Pages
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item dropdown">
-                          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            Blog
-                          </a>
-                          <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                            <li><a class="dropdown-item" href="#">Action</a></li>
-                            <li><a class="dropdown-item" href="#">Another action</a></li>
-                            <li><a class="dropdown-item" href="#">Something else here</a></li>
-                          </ul>
-                        </li>
-                        <li class="nav-item">
-                          <a class="nav-link" href="#">Contact</a>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
+        <div class="container">
+          <nav class="navbar navbar-expand-lg navbar-light d-flex flex-lg-row-reverse flex-md-row justify-content-between">
+            <div class="logo order-md-1 order-2">
+              <a class="navbar-brand" href="#">ARANOZ.</a>
+            </div>
+            <div class="container-md-fluid order-1 order-md-2">
+              <div class="main-menu mx-auto">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                  <ul class="navbar-nav mx-md-auto">
+                    <li class="nav-item">
+                      <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Shop</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Pages</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Contact</a>
+                    </li>
+                  </ul>
                 </div>
-            </nav>
-            <!-- navigation icons part -->
-            <div class="w-25">
+              </div>
+            </div>
+              <!-- navigation icons part -->
+            <div class="order-3">
               <ul class="d-flex pt-3 justify-content-end">
                   <a class="pe-3 text-dark" href=""><i class="fas fa-search"></i></a>
                   <a class="pe-3 text-dark" href=""><i class="far fa-heart"></i></a></li>
@@ -79,7 +57,9 @@
                     
                 </li>
               </ul>
-          </div>
+            </div>
+          </nav>
+          
         </div>
     </header>
     <!-- main banner section -->
@@ -89,39 +69,39 @@
                 <div class="carousel-inner">
                     <!-- carousel item -->
                     <div class="carousel-item active">
-                        <div class="d-flex py-5">
+                        <div class="d-flex py-5 flex-md-row flex-column-reverse">
                             <div class="carousel-content pe-4">
                                 <h1 class="fw-bold" style="font-size: 66px;">Wood & Cloth Sofa</h1>
                                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore perferendis velit quos mollitia! Cum quidem assumenda quasi iure velit.</p>
                                 <a class="btn px-4 py-2 bg-danger text-white" href="#">Buy Now</a>
                             </div>
-                            <div class="carousel-img">
+                            <div class="carousel-img mb-5 mb-md-0">
                                 <img src="img/sofa.webp" class="d-block w-100" alt="...">
                             </div>
                         </div>
                     </div>
                     <!-- carousel item -->
                     <div class="carousel-item">
-                        <div class="d-flex py-5">
+                        <div class="d-flex py-5 flex-md-row flex-column-reverse">
                             <div class="carousel-content pe-4">
                                 <h1 class="fw-bold" style="font-size: 66px;">Wood & Cloth Sofa</h1>
                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus in quis expedita itaque magnam earum deleniti rem voluptatem facere totam!</p>
                                 <a class="btn px-4 py-2 bg-danger text-white" href="#">Buy Now</a>
                             </div>
-                            <div class="carousel-img">
+                            <div class="carousel-img mb-5 mb-md-0">
                                 <img src="img/sofa.webp" class="d-block w-100" alt="...">
                             </div>
                         </div>
                     </div>
                     <!-- carousel item -->
                     <div class="carousel-item">
-                        <div class="d-flex py-5">
+                        <div class="d-flex py-5 flex-md-row flex-column-reverse">
                             <div class="carousel-content pe-4">
                                 <h1 class="fw-bold" style="font-size: 66px;">Wood & Cloth Sofa</h1>
                                 <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dicta aspernatur id delectus fuga praesentium provident ducimus officia, dignissimos consequuntur eius.</p>
                                 <a class="btn px-4 py-2 bg-danger text-white" href="#">Buy Now</a>
                             </div>
-                            <div class="carousel-img">
+                            <div class="carousel-img mb-5 mb-md-0">
                                 <img src="img/sofa.webp" class="d-block w-100" alt="...">
                             </div>
                         </div>
@@ -141,7 +121,7 @@
       <div class="container overflow-hidden">
         <h2 class="text-center text-dark fw-bold fs-1 pb-5">Featured Category</h2>
         <div class="row mb-3 g-3">
-          <div class="col-7">
+          <div class="col-md-7 col-12">
             <div class="row me-2" style="background-color: #ECFDFF;">
               <div class="single-feature-post py-5 ps-3 position-relative">
                 <h4 class="fw-light">Premium Quality</h4>
@@ -151,7 +131,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="col-12 col-md-5">
             <div class="row ms-2" style="background-color: #ECFDFF;">
               <div class="single-feature-post py-5 ps-3 position-relative">
                 <h4 class="fw-light">Premium Quality</h4>
@@ -164,7 +144,7 @@
           </div>
         </div>
         <div class="row g-3">
-          <div class="col-5">
+          <div class="col-md-5 col-12">
             <div class="row me-2"  style="background-color: #ECFDFF;">
               <div class="single-feature-post py-5 ps-3 position-relative">
                 <h4 class="fw-light">Premium Quality</h4>
@@ -175,7 +155,7 @@
               </div>
             </div>
           </div>
-          <div class="col">
+          <div class="colmd-7 col-12">
             <div class="row ms-2" style="background-color: #ECFDFF;">
               <div class="single-feature-post py-5 ps-3 position-relative">
                 <h4 class="fw-light">Premium Quality</h4>
@@ -542,27 +522,27 @@
     <section class="offer py-5" style="background-color: #ECFDFF;">
       <div class="container">
         <div class="row py-5 justify-content-center align-items-center">
-          <div class="col-md-6 col-sm-12">
-            <img src="img/xoffer_img.png" alt="">
+          <div class="col-md-6 col-12">
+            <img class="img-fluid" src="img/xoffer_img.png" alt="">
           </div>
-          <div class="col-md-6 col-sm-12">
-            <h2>Weekly Sale on 60% Off All Products</h2>
-            <div class="time d-flex pt-5 justify-content-between">
+          <div class="col-md-6 col-12">
+            <h2 class="overflow-hidden">Weekly Sale on 60% Off All Products</h2>
+            <div class="time text-center d-flex pt-5 justify-content-between">
               <div class="day">
-                <h2>DAYS</h2>
-                <h3>-668</h3>
+                <h2 class="fs-6 fw-normal fw-md-bold fs-md-2">DAYS</h2>
+                <h3 class="fs-6 fw-normal fw-md-bold fs-md-3">-668</h3>
               </div>
               <div class="hour">
-                <h2>HOURS</h2>
-                <h3>15</h3>
+                <h2 class="fs-6 fw-normal fw-md-bold fs-md-2">HOURS</h2>
+                <h3 class="fs-6 fw-normal fw-md-bold fs-md-3">15</h3>
               </div>
               <div class="minute">
-                <h2>MINUTES</h2>
-                <h3>56</h3>
+                <h2 class="fs-6 fw-normal fw-md-bold fs-md-2">MINUTES</h2>
+                <h3 class="fs-6 fw-normal fw-md-bold fs-md-3">56</h3>
               </div>
               <div class="second">
-                <h2>SECONDS</h2>
-                <h3>28</h3>
+                <h2 class="fs-6 fw-normal fw-md-bold fs-md-2">SECONDS</h2>
+                <h3 class="fs-6 fw-normal fw-md-bold fs-md-3">28</h3>
               </div>
             </div>
             <div class="input-group input-group-lg mt-5">
@@ -1101,6 +1081,6 @@
       </div>
     </footer>
     <!-- bootstrap js link -->
-    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
