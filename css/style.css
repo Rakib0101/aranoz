@@ -7,13 +7,15 @@
 .single-feature-post{
     height: 400px;
 }
-.single-feature-post h2{
-    margin-bottom: 200px;
+.single-feature-post img{
+    z-index: 1;
 }
 .single-feature-post .btn {
     visibility: hidden;
     transition: .7s;
-    z-index: 5;
+    z-index: 500;
+    position: absolute;
+    top: 320px;
 }
 .single-feature-post:hover .btn{
     visibility: visible;
